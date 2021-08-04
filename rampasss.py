@@ -15,7 +15,6 @@ def window():
 
     widget.setStyleSheet("background-color: #161B22;")
     widget.setGeometry(100, 100, 520, 400)
-    widget.backgroundRole()
     widget.setWindowTitle("RamPass")
     widget.show()
     sys.exit(qt.exec_())
