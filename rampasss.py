@@ -31,6 +31,7 @@ def window():
     go_button.setStyleSheet("background-color: #4DA9F9;")
     go_button.clicked.connect(go_button_clicked)
 
+    qt.setStyle("Fusion")
     widget.setStyleSheet("background-color: #161B22;")
     widget.setGeometry(100, 100, 520, 400)
     widget.setWindowTitle("RamPass")
