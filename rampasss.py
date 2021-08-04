@@ -1,10 +1,24 @@
+import sys
 import random
+from PyQt5.QtWidgets import QApplication, QWidget
 
 
 def mix(string):
     alg_list = list(string)
     random.shuffle(alg_list)
     return ''.join(alg_list)
+
+
+def window():
+    qt = QApplication(sys.argv)
+    widget = QWidget()
+
+    widget.setStyleSheet("background-color: #161B22;")
+    widget.setGeometry(100, 100, 520, 400)
+    widget.backgroundRole()
+    widget.setWindowTitle("RamPass")
+    widget.show()
+    sys.exit(qt.exec_())
 
 
 fnum1 = random.randint(0, 9)
@@ -20,3 +34,6 @@ final_password = uLetter1 + uLetter2 + str(fnum1) + str(fnum2) + lLetter1 + lLet
 final_password = mix(final_password)
 
 print("Your password: " + final_password)
+
+if __name__ == '__main__':
+    window()
