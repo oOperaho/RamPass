@@ -19,4 +19,4 @@ spcchar2 = chr(random.randint(33, 64))
 final_password = uLetter1 + uLetter2 + str(fnum1) + str(fnum2) + lLetter1 + lLetter2 + spcchar1 + spcchar2
 final_password = mix(final_password)
 
-print(final_password)
+print("Your password: " + final_password)
