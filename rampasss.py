@@ -1,6 +1,6 @@
 import sys
 import random
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel
 
 
 def mix(string):
@@ -12,6 +12,9 @@ def mix(string):
 def window():
     qt = QApplication(sys.argv)
     widget = QWidget()
+
+    genpass_label = QLabel(widget)
+    genpass_label.setText("Generate Password")
 
     go_button = QPushButton(widget)
     go_button.setText("Go")
