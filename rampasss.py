@@ -9,19 +9,6 @@ def mix(string):
     return ''.join(alg_list)
 
 
-fnum1 = random.randint(0, 9)
-fnum2 = random.randint(0, 9)
-uLetter1 = chr(random.randint(65, 90))
-uLetter2 = chr(random.randint(65, 90))
-lLetter1 = chr(random.randint(97, 122))
-lLetter2 = chr(random.randint(97, 122))
-spcchar1 = chr(random.randint(33, 64))
-spcchar2 = chr(random.randint(33, 64))
-
-final_password = uLetter1 + uLetter2 + str(fnum1) + str(fnum2) + lLetter1 + lLetter2 + spcchar1 + spcchar2
-final_password = mix(final_password)
-
-
 def window():
     qt = QApplication(sys.argv)
     widget = QWidget()
@@ -41,6 +28,18 @@ def window():
 
 
 def go_button_clicked():
+    fnum1 = random.randint(0, 9)
+    fnum2 = random.randint(0, 9)
+    uletter1 = chr(random.randint(65, 90))
+    uletter2 = chr(random.randint(65, 90))
+    lletter1 = chr(random.randint(97, 122))
+    lletter2 = chr(random.randint(97, 122))
+    spcchar1 = chr(random.randint(33, 64))
+    spcchar2 = chr(random.randint(33, 64))
+
+    final_password = uletter1 + uletter2 + str(fnum1) + str(fnum2) + lletter1 + lletter2 + spcchar1 + spcchar2
+    final_password = mix(final_password)
+
     print(final_password)
 
 
