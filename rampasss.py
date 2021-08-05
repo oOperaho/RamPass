@@ -25,6 +25,7 @@ final_password = mix(final_password)
 def window():
     qt = QApplication(sys.argv)
     widget = QWidget()
+
     go_button = QPushButton(widget)
     go_button.setText("Go")
     go_button.move(215, 190)
