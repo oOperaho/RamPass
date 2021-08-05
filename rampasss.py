@@ -27,7 +27,8 @@ def window():
     sys.exit(qt.exec_())
 
 
-def go_button_clicked():
+def go_button_clicked(self):
+
     fnum1 = random.randint(0, 9)
     fnum2 = random.randint(0, 9)
     uletter1 = chr(random.randint(65, 90))
@@ -41,7 +42,7 @@ def go_button_clicked():
     final_password = mix(final_password)
 
     print(final_password)
+    self.label.setText(final_password)
 
 
-if __name__ == '__main__':
-    window()
+window()
