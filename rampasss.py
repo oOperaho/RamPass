@@ -30,7 +30,7 @@ def window():
     sys.exit(qt.exec_())
 
 
-def go_button_clicked(self):
+def go_button_clicked():
 
     fnum1 = random.randint(0, 9)
     fnum2 = random.randint(0, 9)
@@ -45,7 +45,6 @@ def go_button_clicked(self):
     final_password = mix(final_password)
 
     print(final_password)
-    self.label.setText(final_password)
 
 
 window()
