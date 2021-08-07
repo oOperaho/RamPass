@@ -13,18 +13,18 @@ def mix(string):
 class MainWidget(QMainWindow):
     def __init__(self):
         super(MainWidget, self).__init__()
+        self.label_pass = QtWidgets.QLabel(self)
+        self.go_button = QPushButton(self)
         self.setStyleSheet("background-color: #161B22;")
         self.setGeometry(100, 100, 520, 400)
         self.setWindowTitle("RamPass")
         self.startui()
 
     def startui(self):
-        self.label_pass = QtWidgets.QLabel(self)
         self.label_pass.setText("      ")
         self.label_pass.move(215, 150)
         self.label_pass.setStyleSheet("background-color: #FFFFFF;")
 
-        self.go_button = QPushButton(self)
         self.go_button.setText("Go")
         self.go_button.move(215, 190)
         self.go_button.setStyleSheet("background-color: #4DA9F9;")
