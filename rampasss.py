@@ -23,7 +23,7 @@ class MainWidget(QMainWindow):
     def startui(self):
         self.label_pass.setText("")
         self.label_pass.move(215, 150)
-        self.label_pass.setStyleSheet("background-color: #FFFFFF;")
+        self.label_pass.setStyleSheet("background-color: #161B22;")
 
         self.go_button.setText("Go")
         self.go_button.move(215, 190)
@@ -43,7 +43,7 @@ class MainWidget(QMainWindow):
         final_password = uletter1 + uletter2 + str(fnum1) + str(fnum2) + lletter1 + lletter2 + spcchar1 + spcchar2
         final_password = mix(final_password)
 
-        self.label_pass.setText(" " * 8 + final_password)
+        self.label_pass.setText(" " * 9 + final_password)
 
 
 def window():
