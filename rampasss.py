@@ -18,9 +18,9 @@ class MainWidget(QMainWindow):
         self.setStyleSheet("background-color: #161B22;")
         self.setGeometry(100, 100, 520, 400)
         self.setWindowTitle("RamPass")
-        self.startui()
+        self.mainui()
 
-    def startui(self):
+    def mainui(self):
         self.label_pass.setText("")
         self.label_pass.move(215, 150)
         self.label_pass.setStyleSheet("""background-color: #161B22; color: #FFFFFF;""")
