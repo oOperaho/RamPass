@@ -1,7 +1,7 @@
 import sys
 import random
 from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QDesktopWidget
 
 
 def mix(string):
@@ -29,6 +29,12 @@ class MainWidget(QMainWindow):
         self.go_button.move(215, 190)
         self.go_button.setStyleSheet("background-color: #4DA9F9;")
         self.go_button.clicked.connect(self.go_button_clicked)
+
+    def allign(self):
+        so_centralization = self.frameGeometry()
+        dc = QDesktopWidget().availableGeometry().center()
+        so_centralization.moveCenter(dc)
+        self.move(so_centralization.topLeft())
 
     def go_button_clicked(self):
         fnum1 = random.randint(0, 9)
