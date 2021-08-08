@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 def mix(string):
     alg_list = list(string)
     random.shuffle(alg_list)
-    return ''.join(alg_list)
+    return "".join(alg_list)
 
 
 class MainWidget(QMainWindow):
@@ -23,7 +23,7 @@ class MainWidget(QMainWindow):
     def startui(self):
         self.label_pass.setText("")
         self.label_pass.move(215, 150)
-        self.label_pass.setStyleSheet("background-color: #161B22;")
+        self.label_pass.setStyleSheet("""background-color: #161B22; color: #FFFFFF;""")
 
         self.go_button.setText("Go")
         self.go_button.move(215, 190)
