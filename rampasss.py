@@ -22,7 +22,8 @@ class MainWidget(QMainWindow):
         self.mainui()
 
     def mainui(self):
-        self.genpass.setText("Generate Password")
+        self.genpass.setText(" Generate Password")
+        self.genpass.move(215, 120)
 
         self.label_pass.setText("")
         self.label_pass.move(215, 150)
