@@ -26,7 +26,7 @@ class MainWidget(QMainWindow):
         self.genpass.setText("Generate Password")
         self.genpass.setGeometry(100, 100, 200, 100)
         self.genpass.setFont(QFont("Impact", 15))
-        self.genpass.move(195, 40)
+        self.genpass.move(190, 40)
         self.label_pass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
         self.label_pass.setText("")
