@@ -30,7 +30,8 @@ class MainWidget(QMainWindow):
         self.label_pass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
         self.label_pass.setText("")
-        self.label_pass.move(215, 150)
+        self.label_pass.move(200, 150)
+        self.label_pass.setFont(QFont("Times New Roman", 12))
         self.label_pass.setStyleSheet("""background-color: #161B22; color: #FFFFFF;""")
 
         self.go_button.setText("Go")
