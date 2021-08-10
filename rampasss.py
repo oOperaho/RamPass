@@ -23,10 +23,10 @@ class MainWidget(QMainWindow):
         self.mainui()
 
     def mainui(self):
-        self.genpass.setText("Generate Password")
+        self.genpass.setText("• Generate Password •")
         self.genpass.setGeometry(100, 100, 200, 100)
         self.genpass.setFont(QFont("Impact", 15))
-        self.genpass.move(187, 40)
+        self.genpass.move(183, 40)
         self.genpass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
         self.label_pass.setText("")
