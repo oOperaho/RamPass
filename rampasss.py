@@ -1,6 +1,7 @@
 import sys
 import random
 from PyQt5 import QtWidgets
+from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
@@ -23,7 +24,9 @@ class MainWidget(QMainWindow):
 
     def mainui(self):
         self.genpass.setText(" Generate Password")
-        self.genpass.move(215, 120)
+        self.genpass.setFont(QFont("Times New Roman", 10))
+        self.genpass.move(215, 100)
+        self.label_pass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
         self.label_pass.setText("")
         self.label_pass.move(215, 150)
