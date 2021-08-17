@@ -30,7 +30,7 @@ class MainWidget(QMainWindow):
         self.genpass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
         self.label_pass.setText("")
-        self.label_pass.move(215, 150)
+        self.label_pass.move(215, 148)
         self.label_pass.setFont(QFont("Times New Roman", 10))
         self.label_pass.setStyleSheet("""background-color: #161B22; color: #FFFFFF;""")
 
