@@ -59,7 +59,7 @@ class MainWidget(QMainWindow):
 def window():
     qt = QApplication(sys.argv)
     widget = MainWidget()
-    qt.setStyle("Oxygen")
+    qt.setStyle("QtCurve")
     widget.show()
     sys.exit(qt.exec_())
 
