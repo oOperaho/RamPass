@@ -31,7 +31,8 @@ class MainWidget(QMainWindow):
         self.genpass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
         self.line_label.setText("━━━━━━━━━━━━━━━━━━━━━━━━━━")
-        self.label_pass.move(215, 175)
+        self.line_label_pass.move(215, 175)
+        self.line_label.setStyleSheet("""background-color: #161B22; color: #FFFFFF;""")
 
         self.label_pass.setText("")
         self.label_pass.move(215, 150)
