@@ -1,3 +1,5 @@
+# UI code (QtDesigner)
+
 import sys
 import random
 from PyQt5 import QtWidgets
