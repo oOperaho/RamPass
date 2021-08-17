@@ -16,6 +16,7 @@ class MainWidget(QMainWindow):
         super(MainWidget, self).__init__()
         self.label_pass = QtWidgets.QLabel(self)
         self.genpass = QtWidgets.QLabel(self)
+        self.line_label = QtWidgets.QLabel(self)
         self.go_button = QPushButton(self)
         self.setStyleSheet("background-color: #161B22;")
         self.setGeometry(100, 100, 520, 400)
@@ -28,6 +29,9 @@ class MainWidget(QMainWindow):
         self.genpass.setFont(QFont("Impact", 15))
         self.genpass.move(175, 40)
         self.genpass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
+
+        self.line_label.setText("━━━━━━━━━━━━━━━━━━━━━━━━━━")
+        self.label_pass.move(215, 175)
 
         self.label_pass.setText("")
         self.label_pass.move(215, 150)
