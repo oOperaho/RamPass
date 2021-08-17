@@ -30,10 +30,6 @@ class MainWidget(QMainWindow):
         self.genpass.move(175, 40)
         self.genpass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
-        self.line_label.setText("━━━━━━━━━━━━━━━━━━━━━━━━━━")
-        self.line_label.move(215, 170)
-        self.line_label.setStyleSheet("""background-color: #161B22; color: #65F791;""")
-
         self.label_pass.setText("")
         self.label_pass.move(215, 150)
         self.label_pass.setFont(QFont("Times New Roman", 10))
