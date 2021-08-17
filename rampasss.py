@@ -3,7 +3,6 @@ import random
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
-from PyQt5.uic.properties import QtGui
 
 
 def mix(string):
@@ -18,7 +17,6 @@ class MainWidget(QMainWindow):
         self.label_pass = QtWidgets.QLabel(self)
         self.genpass = QtWidgets.QLabel(self)
         self.go_button = QPushButton(self)
-        self.clipboard = QtGui.QApplication.clipboard()
         self.setStyleSheet("background-color: #161B22;")
         self.setGeometry(100, 100, 520, 400)
         self.setWindowTitle("RamPass")
