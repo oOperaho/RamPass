@@ -59,7 +59,7 @@ class MainWidget(QMainWindow):
 def window():
     qt = QApplication(sys.argv)
     widget = MainWidget()
-    qt.setStyle("QtCurve")
+    qt.setStyle("Breeze")
     widget.show()
     sys.exit(qt.exec_())
 
