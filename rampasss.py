@@ -32,7 +32,7 @@ class MainWidget(QMainWindow):
 
         self.line_label.setText("━━━━━━━━━━━━━━━━━━━━━━━━━━")
         self.line_label.move(215, 160)
-        self.line_label.setStyleSheet("""background-color: #161B22; color: #FFFFFF;""")
+        self.line_label.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
         self.label_pass.setText("")
         self.label_pass.move(215, 150)
