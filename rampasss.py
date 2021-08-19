@@ -6,9 +6,9 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
 def mix(string):
-    alg_list = list(string)
-    random.shuffle(alg_list)
-    return "".join(alg_list)
+    password_list = list(string)
+    random.shuffle(password_list)
+    return "".join(password_list)
 
 
 class MainWidget(QMainWindow):
