@@ -59,7 +59,7 @@ class MainWidget(QMainWindow):
 def window():
     qt = QApplication(sys.argv)
     widget = MainWidget()
-    qt.setStyle("Breeze") # It can be Fusion or Oxygen
+    qt.setStyle("Breeze")  # It can be Fusion or Oxygen
     widget.show()
     sys.exit(qt.exec_())
 
