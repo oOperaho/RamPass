@@ -36,6 +36,7 @@ class MainWidget(QMainWindow):
 
         self.go_button.setText("GO")
         self.go_button.move(215, 190)
+        self.go_button.setGeometry(80, 80, 180, 80)
         self.go_button.setFont(QFont("Times New Roman", 8))
         self.go_button.setStyleSheet("background-color: #4DA9F9;")
         self.go_button.clicked.connect(self.go_button_clicked)
