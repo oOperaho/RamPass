@@ -39,6 +39,12 @@ class MainWidget(QMainWindow):
         self.go_button.setStyleSheet("background-color: #4DA9F9; color: #1b1c1e")
         self.go_button.clicked.connect(self.go_button_clicked)
 
+        QApplication.clipboard().dataChanged.connect(self.copytoclipboard())
+
+    def copytoclipboard(self):
+        txt = QApplication.clipboard().text()
+        self.b.insertPlainText(txt + "\n")
+
     def go_button_clicked(self):
         fnum1 = random.randint(0, 9)
         fnum2 = random.randint(0, 9)
