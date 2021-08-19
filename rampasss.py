@@ -48,7 +48,7 @@ class MainWidget(QMainWindow):
 
     def copytoclipboard(self):
         txt = QApplication.clipboard().text()
-        self.copy_blank.insertPlainText("")
+        self.copy_blank.insertPlainText(txt)
 
     def go_button_clicked(self):
         fnum1 = random.randint(0, 9)
