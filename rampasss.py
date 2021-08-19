@@ -35,7 +35,7 @@ class MainWidget(QMainWindow):
         self.label_pass.setStyleSheet("""background-color: #161B22; color: #FFFFFF;""")
 
         self.go_button.setText("GO")
-        self.go_button.setGeometry(227, 210, 70, 25)
+        self.go_button.setGeometry(227, 1800, 70, 25)
         self.go_button.setFont(QFont("Times New Roman", 8))
         self.go_button.setStyleSheet("background-color: #4DA9F9;")
         self.go_button.clicked.connect(self.go_button_clicked)
