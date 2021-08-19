@@ -14,7 +14,6 @@ def mix(string):
 class MainWidget(QMainWindow):
     def __init__(self):
         super(MainWidget, self).__init__()
-        self.copy_blank = QPlainTextEdit(self)
         self.label_pass = QtWidgets.QLabel(self)
         self.genpass = QtWidgets.QLabel(self)
         self.go_button = QPushButton(self)
@@ -29,10 +28,6 @@ class MainWidget(QMainWindow):
         self.genpass.setFont(QFont("Impact", 15))
         self.genpass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
-        self.copy_blank.insertPlainText("")
-        self.copy_blank.setGeometry(212, 140, 100, 40)
-        self.copy_blank.setStyleSheet("""background-color: #161B22; color: white;""")
-
         self.label_pass.setText("")
         self.label_pass.setGeometry(212, 140, 100, 40)
         self.label_pass.setFont(QFont("Times New Roman", 10))
@@ -43,12 +38,6 @@ class MainWidget(QMainWindow):
         self.go_button.setFont(QFont("Times New Roman", 8))
         self.go_button.setStyleSheet("background-color: #4DA9F9; color: #1b1c1e")
         self.go_button.clicked.connect(self.go_button_clicked)
-
-        QApplication.clipboard().dataChanged.connect(self.copytoclipboard())
-
-    def copytoclipboard(self):
-        txt = QApplication.clipboard().text()
-        self.copy_blank.insertPlainText(txt)
 
     def go_button_clicked(self):
         fnum1 = random.randint(0, 9)
@@ -64,7 +53,6 @@ class MainWidget(QMainWindow):
         final_password = mix(final_password)
 
         self.label_pass.setText(" " * 8 + final_password)
-        self.copy_blank.setPlainText(final_password)
 
 
 def window():
