@@ -30,6 +30,8 @@ class MainWidget(QMainWindow):
         self.genpass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
         self.copy_blank.insertPlainText("")
+        self.copy_blank.setGeometry(212, 140, 100, 40)
+        self.copy_blank.setStyleSheet("""background-color: #161B22; color: white;""")
 
         self.label_pass.setText("")
         self.label_pass.setGeometry(212, 140, 100, 40)
@@ -46,7 +48,7 @@ class MainWidget(QMainWindow):
 
     def copytoclipboard(self):
         txt = QApplication.clipboard().text()
-        self.label_pass.insertAction(txt + "\n")
+        self.copy_blank.insertPlainText("")
 
     def go_button_clicked(self):
         fnum1 = random.randint(0, 9)
@@ -62,6 +64,7 @@ class MainWidget(QMainWindow):
         final_password = mix(final_password)
 
         self.label_pass.setText(" " * 8 + final_password)
+        self.copy_blank.setPlainText(final_password)
 
 
 def window():
