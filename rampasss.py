@@ -5,6 +5,7 @@ from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
+# Randomize list 
 def mix(string):
     password_list = list(string)
     random.shuffle(password_list)
