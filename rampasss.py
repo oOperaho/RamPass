@@ -1,6 +1,5 @@
 import sys
 import random
-import webbrowser
 
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QFont
@@ -61,6 +60,7 @@ class MainWidget(QMainWindow):
         final_password = mix(final_password)
 
         self.label_pass.setText(" " * 8 + final_password)
+
 
 
 
