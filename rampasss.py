@@ -59,7 +59,6 @@ class MainWidget(QMainWindow):
         self.webbrowser.open("https://github.com/oOperaho/RamPass")
 
 
-
 def window():
     qt = QApplication(sys.argv)
     widget = MainWidget()
