@@ -1,7 +1,5 @@
 import sys
 import random
-import webbrowser
-
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
@@ -59,7 +57,6 @@ class MainWidget(QMainWindow):
 
     def open_repo(self):
         self.webbrowser.open("https://github.com/oOperaho/RamPass")
-
 
 
 
