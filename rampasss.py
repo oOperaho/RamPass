@@ -40,6 +40,8 @@ class MainWidget(QMainWindow):
         self.go_button.setStyleSheet("background-color: #4DA9F9; color: #1b1c1e")
         self.go_button.clicked.connect(self.go_button_clicked)
 
+        self.repo_button.clicked.connect(self.open_repo)
+
     def go_button_clicked(self):
         fnum1 = random.randint(0, 9)
         fnum2 = random.randint(0, 9)
