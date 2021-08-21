@@ -61,7 +61,7 @@ class MainWidget(QMainWindow):
 
         self.label_pass.setText(" " * 8 + final_password)
 
-
+    def open_repo(self):
 
 
 def window():
