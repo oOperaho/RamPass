@@ -43,7 +43,7 @@ class MainWidget(QMainWindow):
         self.go_button.clicked.connect(self.go_button_clicked)
 
         self.repo_button.setText("•")
-        self.repo_button.setGeometry(10, 10, 0, 0)
+        self.repo_button.setGeometry(10, 10, 10, 10)
         self.repo_button.setStyleSheet("background-color: #161B22; color: black")
         self.repo_button.clicked.connect(self.open_repo)
 
