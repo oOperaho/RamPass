@@ -41,7 +41,7 @@ class MainWidget(QMainWindow):
         self.go_button.clicked.connect(self.go_button_clicked)
 
         self.repo_button.setText("Github")
-        self.repo_button.setGeometry(50, 50, 50, 50)
+        self.repo_button.setGeometry(10, 10, 20, 20)
         self.repo_button.setStyleSheet("background-color: #161B22; color: black")
         self.repo_button.clicked.connect(self.open_repo)
 
