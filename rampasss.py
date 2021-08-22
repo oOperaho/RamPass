@@ -69,7 +69,7 @@ def open_repo(self):
 def window():
     qt = QApplication(sys.argv)
     widget = MainWidget()
-    qt.setStyle("Breeze")  # It can also be Fusion, QtCurve or Oxygen
+    qt.setStyle("Breeze")
     widget.show()
     sys.exit(qt.exec_())
 
