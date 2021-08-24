@@ -60,7 +60,6 @@ class MainWidget(QMainWindow):
 
         self.label_pass.setText(" " * 8 + final_password)
 
-
     def open_repo(self):
         self.webbrowser.open("https://github.com/oOperaho/RamPass")
 
