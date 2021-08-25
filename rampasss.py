@@ -1,6 +1,7 @@
 import sys
 import random
 from PyQt5 import QtWidgets
+from PyQt5.QtCore import QUrl
 from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 
@@ -41,6 +42,7 @@ class MainWidget(QMainWindow):
         self.go_button.clicked.connect(self.go_button_clicked)
 
         self.repo_button.setText("-")
+        self.repo_button.setUrl(QUrl("https://github.com/oOperaho/RamPass"))
         self.repo_button.setGeometry(10, 10, 12, 12)
         self.repo_button.setStyleSheet("background-color: #161B22; color: white")
         self.repo_button.clicked.connect(self.open_repo)
