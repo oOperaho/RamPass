@@ -2,7 +2,7 @@ import sys
 import random
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QFont
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QTextBrowser
 
 
 def mix(string):
@@ -18,6 +18,8 @@ class MainWidget(QMainWindow):
         self.genpass = QtWidgets.QLabel(self)
         self.go_button = QPushButton(self)
         self.repo_button = QPushButton(self)
+        self.repoLink = QTextBrowser(self)
+        self.repoLink.setOpenExternalLinks(True)
         self.setStyleSheet("background-color: #161B22;")
         self.setGeometry(100, 100, 520, 400)
         self.setWindowTitle("RamPass")
