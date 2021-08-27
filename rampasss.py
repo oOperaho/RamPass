@@ -45,6 +45,7 @@ class MainWidget(QMainWindow):
         self.go_button.clicked.connect(self.go_button_clicked)
 
         self.repoLink.setText("-")
+        self.repoLink.clicked.connect(self.open_repo)
 
         # self.repo_button.setText("-")
         # self.repo_button.setGeometry(10, 10, 12, 12)
