@@ -44,6 +44,8 @@ class MainWidget(QMainWindow):
         self.go_button.setStyleSheet("background-color: #4DA9F9; color: #1b1c1e")
         self.go_button.clicked.connect(self.go_button_clicked)
 
+
+
         # self.repo_button.setText("-")
         # self.repo_button.setGeometry(10, 10, 12, 12)
         # self.repo_button.setStyleSheet("background-color: #161B22; color: white")
@@ -64,8 +66,8 @@ class MainWidget(QMainWindow):
 
         self.label_pass.setText(" " * 8 + final_password)
 
-    def open_repo(self):
-        self.webbrowser.open("https://github.com/oOperaho/RamPass")
+    # def open_repo(self):
+    #     self.webbrowser.open("https://github.com/oOperaho/RamPass")
 
 
 def window():
