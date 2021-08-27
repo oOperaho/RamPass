@@ -44,10 +44,10 @@ class MainWidget(QMainWindow):
         self.go_button.setStyleSheet("background-color: #4DA9F9; color: #1b1c1e")
         self.go_button.clicked.connect(self.go_button_clicked)
 
-        self.repo_button.setText("-")
-        self.repo_button.setGeometry(10, 10, 12, 12)
-        self.repo_button.setStyleSheet("background-color: #161B22; color: white")
-        self.repo_button.clicked.connect(self.open_repo)
+        # self.repo_button.setText("-")
+        # self.repo_button.setGeometry(10, 10, 12, 12)
+        # self.repo_button.setStyleSheet("background-color: #161B22; color: white")
+        # self.repo_button.clicked.connect(self.open_repo)
 
     def go_button_clicked(self):
         fnum1 = random.randint(0, 9)
