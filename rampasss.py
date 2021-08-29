@@ -18,7 +18,7 @@ class MainWidget(QMainWindow):
         self.genpass = QtWidgets.QLabel(self)
         self.go_button = QPushButton(self)
         self.repo_button = QPushButton(self)
-        self.repoLink = QTextBrowser(self)
+
         self.setStyleSheet("background-color: #161B22;")
         self.setGeometry(100, 100, 520, 400)
         self.setWindowTitle("RamPass")
