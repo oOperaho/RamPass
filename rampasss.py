@@ -29,7 +29,7 @@ class MainWidget(QMainWindow):
         self.genpass.setFont(QFont("Impact", 15))
         self.genpass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
-        self.label_pass.setText(" " * 16 + "|")
+        self.label_pass.setText(" " * 16 + "")
         self.label_pass.setGeometry(212, 140, 100, 40)
         self.label_pass.setFont(QFont("Times New Roman", 10))
         self.label_pass.setStyleSheet("""background-color: #161B22; color: white;""")
@@ -40,7 +40,7 @@ class MainWidget(QMainWindow):
         self.go_button.setStyleSheet("background-color: #4DA9F9; color: #1b1c1e")
         self.go_button.clicked.connect(self.go_button_clicked)
 
-        self.repo_button.setText("-")
+        self.repo_button.setText("☻")
         self.repo_button.setGeometry(10, 10, 12, 12)
         self.repo_button.setStyleSheet("background-color: #161B22; color: white")
         self.repo_button.clicked.connect(self.open_repo)
