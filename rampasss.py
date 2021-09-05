@@ -45,7 +45,7 @@ class MainWidget(QMainWindow):
         self.repo_button.setText("•")
         self.repo_button.setGeometry(10, 10, 12, 12)
         self.repo_button.setStyleSheet("background-color: #161B22; color: #65F791")
-        self.repo_button.clicked.connect(self.open_repo)
+        self.repo_button.clicked.connect(self.webbrowser.open_new(self.url))
 
     def go_button_clicked(self):
         fnum1 = random.randint(0, 9)
