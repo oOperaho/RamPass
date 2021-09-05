@@ -15,6 +15,7 @@ def mix(string):
 class MainWidget(QMainWindow):
     def __init__(self):
         super(MainWidget, self).__init__()
+        self.url = "https://github.com/oOperaho/RamPass"
         self.label_pass = QtWidgets.QLabel(self)
         self.genpass = QtWidgets.QLabel(self)
         self.go_button = QPushButton(self)
