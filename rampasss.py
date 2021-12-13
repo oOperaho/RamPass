@@ -22,17 +22,17 @@ class MainWidget(QMainWindow):
         self.repo_button = QPushButton(self)
         self.setStyleSheet("background-color: #161B22;")
         self.setGeometry(100, 100, 520, 400)
-        self.setWindowTitle("RamPass")
+        self.setWindowTitle("SexPass")
         self.mainui()
 
     def mainui(self):
-        self.genpass.setText("• Generate Password •")
-        self.genpass.setGeometry(173, 40, 200, 100)
+        self.genpass.setText("• Sexpass •")
+        self.genpass.setGeometry(218, 40, 200, 100)
         self.genpass.setFont(QFont("Impact", 15))
         self.genpass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
-        self.label_pass.setText(" " * 16 + "-")
-        self.label_pass.setGeometry(212, 140, 100, 40)
+        self.label_pass.setText(" " * 28 + "-")
+        self.label_pass.setGeometry(178, 140, 1000000, 40)
         self.label_pass.setFont(QFont("Times New Roman", 10))
         self.label_pass.setStyleSheet("""background-color: #161B22; color: #ffffff;""")
 
@@ -48,19 +48,25 @@ class MainWidget(QMainWindow):
         self.repo_button.clicked.connect(self.open_repo)
 
     def go_button_clicked(self):
-        fnum1 = random.randint(0, 9)
-        fnum2 = random.randint(0, 9)
-        uletter1 = chr(random.randint(65, 90))
-        uletter2 = chr(random.randint(65, 90))
-        lletter1 = chr(random.randint(97, 122))
-        lletter2 = chr(random.randint(97, 122))
-        spcchar1 = chr(random.randint(33, 64))
-        spcchar2 = chr(random.randint(33, 64))
+        def segment():
+            fnum1 = random.randint(0, 9)
+            fnum2 = random.randint(0, 9)
+            uletter1 = chr(random.randint(65, 90))
+            uletter2 = chr(random.randint(65, 90))
+            lletter1 = chr(random.randint(97, 122))
+            lletter2 = chr(random.randint(97, 122))
+            spcchar1 = chr(random.randint(33, 64))
+            spcchar2 = chr(random.randint(33, 64))
 
-        final_password = uletter1 + uletter2 + str(fnum1) + str(fnum2) + lletter1 + lletter2 + spcchar1 + spcchar2
-        final_password = mix(final_password)
+            final_password = uletter1 + uletter2 + str(fnum1) + str(fnum2) + lletter1 + lletter2 + spcchar1 + spcchar2
+            final_password = mix(final_password)
 
-        self.label_pass.setText(" " * 8 + final_password)
+            return final_password
+
+        final_password = ''.join([segment(), "$3x" , segment(), segment()])
+
+        self.label_pass.setText(final_password)
+
 
     def open_repo(self):
         self.webbrowser.open_new(self.url)
