@@ -78,6 +78,7 @@ class MainWidget(QMainWindow):
 
     def copy_to_clipboard(self):
         pc.copy(self.final_password)
+        print("Copied!")
 
 
 def window():
