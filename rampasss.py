@@ -37,7 +37,7 @@ class MainWidget(QMainWindow):
 
         self.label_pass.setText(" " * 16 + "-")
         self.label_pass.setGeometry(212, 140, 100, 40)
-        self.label_pass.setFont(QFont("Impact", 10))
+        self.label_pass.setFont(QFont("Times New Roman", 10))
         self.label_pass.setStyleSheet("""background-color: #161B22; color: #ffffff;""")
 
         self.go_button.setText("GO")
