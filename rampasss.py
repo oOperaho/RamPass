@@ -46,10 +46,9 @@ class MainWidget(QMainWindow):
         self.go_button.setStyleSheet("background-color: #4DA9F9; color: #1b1c1e")
         self.go_button.clicked.connect(self.go_button_clicked)
 
-        self.repo_button.setText("")
+        self.repo_button.setText("•")
         self.repo_button.setGeometry(10, 10, 12, 12)
-        self.repo_button.setIcon(QIcon("https://encrypted-tbn0.gstatic.com/images?q=tbn"
-                                       ":ANd9GcRZcKR3b2Q6L7kLv3kV04kBtcs-FaYRsYfxRQ&usqp=CAU"))
+        self.repo_button.setStyleSheet("background-color: #65F791")
         self.repo_button.clicked.connect(self.open_repo)
 
         self.copy_text.setText("Copy")
