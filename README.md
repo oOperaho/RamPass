@@ -1,3 +1,4 @@
 # RamPass
 
-A simple desktop app that generates random 8-digit passwords. I'll convert the python file to .exe in the end.
+A simple desktop app to randomize passwords. It generates a 8-digit string, that can be copied to the clipboard.
+
