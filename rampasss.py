@@ -38,7 +38,7 @@ class MainWidget(QMainWindow):
         self.label_pass.setText(" " * 16 + "-")
         self.label_pass.setGeometry(212, 140, 100, 40)
         self.label_pass.setFont(QFont("Times New Roman", 10))
-        self.label_pass.setStyleSheet("""background-color: #161B22; color: #ffffff;""")
+        self.label_pass.setStyleSheet("""background-color: #161B22; color: white;""")
 
         self.go_button.setText("GO")
         self.go_button.setGeometry(227, 180, 70, 25)
@@ -48,7 +48,7 @@ class MainWidget(QMainWindow):
 
         self.repo_button.setText("••")
         self.repo_button.setGeometry(10, 10, 12, 12)
-        self.repo_button.setStyleSheet("background-color: #161B22; color: #65F791")
+        self.repo_button.setStyleSheet("background-image: url();")
         self.repo_button.clicked.connect(self.open_repo)
 
         self.copy_text.setText("Copy")
