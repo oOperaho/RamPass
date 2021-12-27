@@ -1,5 +1,6 @@
 import sys
 import random
+import clipboard as c
 
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QFont
@@ -69,6 +70,8 @@ class MainWidget(QMainWindow):
 
     def open_repo(self):
         self.webbrowser.open_new(self.url)
+
+    def copy_to_clipboard(self):
 
 
 def window():
