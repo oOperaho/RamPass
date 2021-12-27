@@ -54,7 +54,7 @@ class MainWidget(QMainWindow):
         self.copy_text.setText("Copy")
         self.copy_text.setGeometry(250, 210, 29, 20)
         self.copy_text.setFont(QFont("Impact", 8))
-        self.copy_text.setStyleSheet("background-color: black; color: white")
+        self.copy_text.setStyleSheet("background-color: #4DA9F9; color: white")
         self.copy_text.clicked.connect(self.copy_to_clipboard)
 
     def go_button_clicked(self):
