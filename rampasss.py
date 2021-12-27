@@ -20,6 +20,7 @@ class MainWidget(QMainWindow):
         self.genpass = QtWidgets.QLabel(self)
         self.go_button = QPushButton(self)
         self.repo_button = QPushButton(self)
+        self.copy_text = QPushButton(self)
         self.setStyleSheet("background-color: #161B22;")
         self.setGeometry(100, 100, 520, 400)
         self.setWindowTitle("RamPass")
@@ -46,6 +47,9 @@ class MainWidget(QMainWindow):
         self.repo_button.setGeometry(10, 10, 12, 12)
         self.repo_button.setStyleSheet("background-color: #161B22; color: #65F791")
         self.repo_button.clicked.connect(self.open_repo)
+
+        self.copy_text.setText("C")
+        self.copy_text.setGeometry(20, 20, 20, 20)
 
     def go_button_clicked(self):
         fnum1 = random.randint(0, 9)
