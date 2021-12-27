@@ -53,7 +53,7 @@ class MainWidget(QMainWindow):
 
         self.copy_text.setText("Copy")
         self.copy_text.setGeometry(248, 210, 29, 20)
-        self.copy_text.setFont(QFont("Times New Roman", 8))
+        self.copy_text.setFont(QFont("Times New Roman", 7))
         self.copy_text.setStyleSheet("background-color: #4DA9F9; color: black")
         self.copy_text.clicked.connect(self.copy_to_clipboard)
 
