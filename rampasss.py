@@ -67,13 +67,13 @@ class MainWidget(QMainWindow):
         final_password = mix(final_password)
 
         self.label_pass.setText(" " * 8 + final_password)
-        #pc.copy(final_password)
+        # pc.copy(final_password)
 
     def open_repo(self):
         self.webbrowser.open_new(self.url)
 
-    def copy_to_clipboard(self, final_password):
-        pc.copy(final_password)
+    def copy_to_clipboard(self):
+        pc.copy(self.final_password)
 
 
 def window():
