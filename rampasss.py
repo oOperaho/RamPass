@@ -48,7 +48,7 @@ class MainWidget(QMainWindow):
         self.repo_button.setStyleSheet("background-color: #161B22; color: #65F791")
         self.repo_button.clicked.connect(self.open_repo)
 
-        self.copy_text.setText("C")
+        self.copy_text.setText("Copy")
         self.copy_text.setGeometry(212, 160, 14, 14)
         self.copy_text.setStyleSheet("background-color: #161B22; color: white")
 
