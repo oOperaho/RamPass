@@ -49,7 +49,7 @@ class MainWidget(QMainWindow):
         self.repo_button.clicked.connect(self.open_repo)
 
         self.copy_text.setText("Copy")
-        self.copy_text.setGeometry(212, 160, 14, 14)
+        self.copy_text.setGeometry(217, 180, 14, 14)
         self.copy_text.setStyleSheet("background-color: #161B22; color: white")
 
     def go_button_clicked(self):
