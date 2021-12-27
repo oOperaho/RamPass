@@ -1,6 +1,6 @@
 import sys
 import random
-import clipboard as c
+import clipboard as pc
 
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QFont
@@ -67,11 +67,13 @@ class MainWidget(QMainWindow):
         final_password = mix(final_password)
 
         self.label_pass.setText(" " * 8 + final_password)
+        pc.copy(final_password)
 
     def open_repo(self):
         self.webbrowser.open_new(self.url)
 
-    def copy_to_clipboard(self):
+    # def copy_to_clipboard(self):
+    #     self.copy_text.pc.copy(final_password)
 
 
 def window():
