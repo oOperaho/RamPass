@@ -54,8 +54,6 @@ class MainWidget(QMainWindow):
         self.copy_text.setStyleSheet("background-color: #161B22; color: white")
 
     def go_button_clicked(self):
-        global final_password
-
         fnum1 = random.randint(0, 9)
         fnum2 = random.randint(0, 9)
         uletter1 = chr(random.randint(65, 90))
