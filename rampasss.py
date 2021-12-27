@@ -52,7 +52,7 @@ class MainWidget(QMainWindow):
         self.repo_button.clicked.connect(self.open_repo)
 
         self.copy_text.setText("Copy")
-        self.copy_text.setGeometry(250, 210, 29, 20)
+        self.copy_text.setGeometry(247, 210, 29, 20)
         self.copy_text.setFont(QFont("Impact", 8))
         self.copy_text.setStyleSheet("background-color: #4DA9F9; color: black")
         self.copy_text.clicked.connect(self.copy_to_clipboard)
