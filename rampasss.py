@@ -1,6 +1,7 @@
 import sys
 import random
 import clipboard as pc
+import webbrowser
 
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QFont
@@ -71,7 +72,7 @@ class MainWidget(QMainWindow):
         # pc.copy(final_password)
 
     def open_repo(self):
-        self.webbrowser.open_new(self.url)
+        webbrowser.open_new(self.url)
 
     def copy_to_clipboard(self):
         pc.copy(self.final_password)
