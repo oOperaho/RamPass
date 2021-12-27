@@ -50,6 +50,7 @@ class MainWidget(QMainWindow):
 
         self.copy_text.setText("C")
         self.copy_text.setGeometry(20, 20, 20, 20)
+        self.copy_text.setStyleSheet("background-color: #161B22; color: white")
 
     def go_button_clicked(self):
         fnum1 = random.randint(0, 9)
