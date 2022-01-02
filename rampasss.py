@@ -75,6 +75,7 @@ class MainWidget(QMainWindow):
 
     def open_repo(self):
         webbrowser.open_new(self.url)
+        print("Browser opened!")
 
     def copy_to_clipboard(self):
         pc.copy(self.final_password)
