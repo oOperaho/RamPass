@@ -4,7 +4,7 @@ import clipboard as pc
 import webbrowser
 
 from PyQt5 import QtWidgets
-from PyQt5.QtGui import QFont
+from PyQt5.QtGui import QFont, QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
@@ -27,6 +27,7 @@ class MainWidget(QMainWindow):
         self.setStyleSheet("background-color: #161B22;")
         self.setGeometry(100, 100, 520, 400)
         self.setWindowTitle("RamPass")
+        self.setWindowIcon(QIcon("icons/rp.png"))
         self.mainui()
 
     def mainui(self):
