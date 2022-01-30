@@ -25,7 +25,7 @@ class MainWidget(QMainWindow):
         self.repo_button = QPushButton(self)
         self.copy_text = QPushButton(self)
         self.setStyleSheet("background-color: #161B22;")
-        self.setGeometry(100, 100, 520, 400)
+        self.setGeometry(500, 250, 520, 400)
         self.setWindowTitle("RamPass")
         self.setWindowIcon(QIcon("icons/rp.png"))
         self.showMaximized()
@@ -33,18 +33,18 @@ class MainWidget(QMainWindow):
 
     def mainui(self):
         self.genpass.setText("• Generate Password •")
-        self.genpass.setGeometry(173, 40, 200, 100)
-        self.genpass.setFont(QFont("Impact", 15))
+        self.genpass.setGeometry(550, 90, 390, 100)
+        self.genpass.setFont(QFont("Impact", 30))
         self.genpass.setStyleSheet("""background-color: #161B22; color: #65F791;""")
 
         self.label_pass.setText(" " * 16 + "-")
-        self.label_pass.setGeometry(212, 140, 100, 40)
+        self.label_pass.setGeometry(675, 200, 100, 40)
         self.label_pass.setFont(QFont("Times New Roman", 10))
         self.label_pass.setStyleSheet("""background-color: #161B22; color: white;""")
 
         self.go_button.setText("GO")
-        self.go_button.setGeometry(227, 180, 70, 25)
-        self.go_button.setFont(QFont("Times New Roman", 8))
+        self.go_button.setGeometry(675, 240, 100, 40)
+        self.go_button.setFont(QFont("Times New Roman", 10))
         self.go_button.setStyleSheet("background-color: #4DA9F9; color: #1b1c1e")
         self.go_button.clicked.connect(self.go_button_clicked)
 
@@ -54,7 +54,7 @@ class MainWidget(QMainWindow):
         self.repo_button.clicked.connect(self.open_repo)
 
         self.copy_text.setText("Copy")
-        self.copy_text.setGeometry(248, 210, 29, 20)
+        self.copy_text.setGeometry(660, 210, 29, 20)
         self.copy_text.setFont(QFont("Times New Roman", 7))
         self.copy_text.setStyleSheet("background-color: #4DA9F9; color: black")
         self.copy_text.clicked.connect(self.copy_to_clipboard)
