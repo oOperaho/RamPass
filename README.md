@@ -1,4 +1,6 @@
+# ![rp](https://user-images.githubusercontent.com/61850743/151704086-f4c2c978-9cdc-41bf-a0ad-1bf0dfa4a722.png)
 # RamPass
+
 
 A simple desktop app to randomize passwords. It generates a 8-digit string, that can be copied to the clipboard.
 
